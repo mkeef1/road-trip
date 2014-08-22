@@ -1,0 +1,12 @@
+{
+  "_id":{"$oid":"000000000000000000000001"},
+  "name":"Las Vegas",
+  "cash":250,
+  "startCoors": {"lat":45, "lng":50},
+  "endCoors":{"lat":60, "lng":20},
+  "mpg": 26,
+  "gcost": 3.50,
+  "start":{"$date":477295200000},
+  "end": {"$date": 477295200300}
+}
+

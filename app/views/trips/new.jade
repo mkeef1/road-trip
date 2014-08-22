@@ -1,0 +1,38 @@
+extends ../shared/template
+block content
+  h2 New Trip
+  .row
+    .col-xs-3
+      form(role='form', method='post', action='/trips')
+        .form-group
+          label Name
+          input.form-control#name(type='text', autofocus=true, placeholder='Ex. Las Vegas, Europe, Australia')
+        .form-group
+          label Start Location
+          input.form-control#from(type='text', placeholder='Ex. Nashville, TN')
+        .form-group
+          label End Location
+          input.form-control#to(type='text', placeholder='Ex. Las Vegas, Nevada')
+    .col-xs-3
+      .form-group
+        label Cash
+        input.form-control#cash(type='number', placeholder='250')
+      .form-group
+        label Start Date
+        input.form-control#start(type='date')
+      .form-group
+        label End Date
+        input.form-control#end(type='date')
+    .col-xs-3
+      .form-group
+        label MPG
+        input.form-control#mpg(type='number', placeholder='26.2')
+    .col-xs-3
+      .form-group
+        label Price of Gas
+        input.form-control#gcost(type='number', placeholder='3.50')
+     .col-xs-2
+  .row
+  button.btn.btn-primary(type='submit') Add Trip!
+block scripts
+  script(src='/js/user/new-trip.js')
